@@ -1,13 +1,13 @@
-# engr845_project_KulkarniP : Comparing performance of classifier methods on EMG Hand Gesture Signals using Python.
+# Comparing performance of classifier methods on EMG Hand Gesture Signals using Python.
 
 	The prediction of gestures from EMG data is an active area of research. Such a capability assists amputees, stroke patients, physicians, and humans to control Robotic arms. The objective of this study is to use the publicly available EMG data corresponding to several gestures and predict them using Machine learning methods. 
 This project focuses on comparing the performance of different Classifier methods, including both shallow learning and deep learning. The shallow learning methods include Linear Discriminant Analysis (LDA), Naïve Bayes, Support Vector Machine (SVM), and K-Nearest Neighbors (KNN). For the deep learning only classical CNN classifier will be used. 
 The publicly available CSL-HDEMG, raw EMG data is used for this study. Features are computed from the EMG data to be fed to the shallow learning methods. In contrast, the EMG data is reformatted into images to be used as input to the CNN. Finally, the performance in predicting the gestures from EMG data using the above listed classifier methods is determined and compared.
+
 **Block Diagram:** 
 
 
 ![image](https://github.com/PallaviK-Git/engr845_project_KulkarniP/assets/22448278/1bbdba59-13e8-43f9-a778-1915517076c1)
-
 
 	The scope of this project is limited to the performance evaluation of classifier methods. As such, one of the publicly available raw CSL-HDEMG data obtained using the electrode array with 192 single electrodes arranged in a regular 8x24 grid with an inter-electrode distance of 10 mm is used in this study. 
 In the feature extraction step, two types of inputs to the two classes of learning methods are generated. As inputs to the shallow learning methods four time-domain features MAV, ZC, SSC (also referred to as TC) and WAV are computed from the raw EMG data. As inputs to the deep learning method, the raw EMG data is reformatted to an image. 
@@ -30,6 +30,7 @@ The data is split into training and testing set in the ratio of 80 to 20. The fe
 **Expected Outcome:** With the help of confusion matrix, the performance evaluation of the classifier methods is studied. As for the expected outcome, comparing the accuracy of various classification methods will work. The implementation of the deep learning method using classical CNN classifier might work.
 
 **Reference list entry:**
+
 [1] Amma, Christoph; Krings, Thomas; Böer, Jonas; Schultz, Tanja (2015). [ACM Press the 33rd Annual ACM Conference - Seoul, Republic of Korea (2015.04.18-2015.04.23)] Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems - CHI '15 - Advancing Muscle-Computer Interfaces with High-Density Electromyography, (), 929–938. https://dl.acm.org/doi/abs/10.1145/2702123.2702501
 
 CSL-HDEMG -- https://www.uni-bremen.de/en/csl/research/motion-recognition
