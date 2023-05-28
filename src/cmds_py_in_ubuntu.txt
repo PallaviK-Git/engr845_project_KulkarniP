@@ -1,0 +1,20 @@
+  293  :
+  294  ssh ckpsca@192.168.1.8
+  295  exit
+  296  import os
+  297  echo $SHELL
+  298  which import
+  299  python
+  300  exit
+  301  cd ../../../e/SFSU/Courses_Term_Wise/SPRING--22/ENGR-456_Computer-Systems--Qin/ResearchWorkon_sEMG/Datasets/CSL_DB-2015/CSL-HDEMG/src/example_test.py
+  302  cd ../../../e/SFSU/Courses_Term_Wise/SPRING--22/ENGR-456_Computer-Systems--Qin/ResearchWorkon_sEMG/Datasets/CSL_DB-2015/CSL-HDEMG/src/
+  303  python
+  304  python3
+  305  ls -ltr; python3 example_test.py ; ls -ltr
+  306  which conda
+  307  ll /mnt/c/Users/PK/miniconda3/python
+  308  ll /mnt/c/Users/PK/miniconda3/python*
+  309  /mnt/c/Users/PK/miniconda3/python.exe example_test.py 
+  310  ll
+  311  history | tail -20
+  312  history | tail -20 >> cmds_py_in_ubuntu.txt
