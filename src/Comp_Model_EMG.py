@@ -9,7 +9,7 @@ from Models import *
 
 # load the data
 def main():
-    csl = CSL_IO(path='E:\SFSU\Courses_Term_Wise\SPRING--22\ENGR-456_Computer-Systems--Qin\ResearchWorkon_sEMG\Datasets\CSL_DB-2015\CSL-HDEMG\data', typeOP=1)
+    csl = CSL_IO(path='.\CSL-HDEMG\data', typeOP=1) #Mention the absolute path to the dataset folder
     trialDataFromCSL = csl.getData()
     #sio.savemat('CSLFormattedData_gest14To26.mat', {"trailData":trialDataFromCSL})
     #trialDataFromCSL1 = sio.loadmat('CSLFormattedData_gest14To26.mat')
@@ -19,16 +19,14 @@ def main():
     FeatExt = FeatureExtract(data=trialDataFromCSL)#['trailData'])
     X, Y = FeatExt.FeatureExtract1()
     #SVMperformance = SVM(X, Y)
-    #print("SVM performance",SVMperformance)
-    #SVM(X, Y)
     #KNNPerformance = KNN(X, Y)
     #LDAPerformance = LDA(X, Y)
     #NaiveBayesPerformance = NB(X, Y)
     #MLPImplement = DNN(X, Y)
-    #SVM(X, Y)
-    #KNN(X, Y)
-    #LDA(X, Y)
-    #NB(X, Y)
+    SVM(X, Y)
+    KNN(X, Y)
+    LDA(X, Y)
+    NB(X, Y)
     DNN(X, Y)
 
 if __name__ == '__main__':
