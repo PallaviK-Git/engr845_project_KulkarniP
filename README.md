@@ -6,12 +6,11 @@ The publicly available CSL-HDEMG, raw EMG data is used for this study. Features 
 
 **Block Diagram:** 
 
-
-![image](https://github.com/PallaviK-Git/engr845_project_KulkarniP/assets/22448278/1bbdba59-13e8-43f9-a778-1915517076c1)
+![image](https://github.com/PallaviK-Git/engr845_project_KulkarniP/assets/22448278/1554d7a4-ad92-4b15-8d3b-7d664ff02cfe)
 
 The scope of this project is limited to the performance evaluation of classifier methods. As such, one of the publicly available raw CSL-HDEMG data obtained using the electrode array with 192 single electrodes arranged in a regular 8x24 grid with an inter-electrode distance of 10 mm is used in this study. 
 In the feature extraction step, two types of inputs to the two classes of learning methods are generated. As inputs to the shallow learning methods four time-domain features MAV, ZC, SSC (also referred to as TC) and WAV are computed from the raw EMG data. As inputs to the deep learning method, the raw EMG data is reformatted to an image. 
-	For classification, two categories of learning methods are chosen. The popular and still widely used shallow learning methods in the literature namely LDA, Naïve Bayes, SVM, and KNN are used in this study. In contrast to the inputs to the deep learning methods, the shallow learning methods are more suitable to certain EMG data obtained using fewer number of probes. The classical deep learning network, Resnet is used for this study.
+	For classification, two categories of learning methods are chosen. The popular and still widely used shallow learning methods in the literature namely LDA, Naïve Bayes, SVM, and KNN are used in this study. In contrast to the inputs to the deep learning methods, the shallow learning methods are more suitable to certain EMG data obtained using fewer number of probes. The classical deep learning network, MLP is used for this study.
 The output of the classifier methods is the prediction of the gestures. The predicted gestures are compared with the known ground truth gestures during the influence step to determine confusion matrix as the performance metric. 
 
 **Critical aspects:**
