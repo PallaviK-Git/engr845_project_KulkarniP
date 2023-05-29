@@ -1,0 +1,6 @@
+CSL-HDsEMG Data Set access information:
+(Due to the large size of the dataset and file upload size limit in GitHub I am sharing the link to the dataset.)
+This is the link to the website which published the CSL-HDsEMG data set.
+  https://www.uni-bremen.de/en/csl/research/motion-recognition
+This is the link to acquire the Data Set. You will receive a Link for direct download via email once you enter you details in the form provided in the link below.
+  https://www.csl.uni-bremen.de/CorpusData/download.php?crps=cslhdemg
