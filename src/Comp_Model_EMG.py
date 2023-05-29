@@ -9,16 +9,18 @@ from Models import *
 
 # load the data
 def main():
-    csl = CSL_IO(path='.\CSL-HDEMG\data', typeOP=1) #Mention the absolute path to the dataset folder
+    csl = CSL_IO(path='E:\SFSU\Courses_Term_Wise\SPRING--22\ENGR-456_Computer-Systems--Qin\ResearchWorkon_sEMG\Datasets\CSL_DB-2015\CSL-HDEMG\data', typeOP=1)
     trialDataFromCSL = csl.getData()
-    #sio.savemat('CSLFormattedData_gest14To26.mat', {"trailData":trialDataFromCSL})
-    #trialDataFromCSL1 = sio.loadmat('CSLFormattedData_gest14To26.mat')
+    #sio.savemat('CSLFormattedData.mat', {"trailData":trialDataFromCSL})
+    #trialDataFromCSL1 = sio.loadmat('CSLFormattedData.mat')
     #hdf5storage.savemat('CSLFormattedData_gest14To26.mat', {"trailData":trialDataFromCSL}, format=7.3, matlab_compatible=True, compress=False)
     #trialDataFromCSL1 = hdf5storage.loadmat('CSLFormattedData_gest14To26.mat')
     #FeatExt = FeatureExtract(data=trialDataFromCSL1['trailData'])
     FeatExt = FeatureExtract(data=trialDataFromCSL)#['trailData'])
     X, Y = FeatExt.FeatureExtract1()
     #SVMperformance = SVM(X, Y)
+    #print("SVM performance",SVMperformance)
+    #SVM(X, Y)
     #KNNPerformance = KNN(X, Y)
     #LDAPerformance = LDA(X, Y)
     #NaiveBayesPerformance = NB(X, Y)
