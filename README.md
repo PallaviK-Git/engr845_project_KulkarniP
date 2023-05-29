@@ -32,7 +32,7 @@ The data is split into training and testing set in the ratio of 80 to 20. The fe
 
 [1] Amma, Christoph; Krings, Thomas; Böer, Jonas; Schultz, Tanja (2015). [ACM Press the 33rd Annual ACM Conference - Seoul, Republic of Korea (2015.04.18-2015.04.23)] Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems - CHI '15 - Advancing Muscle-Computer Interfaces with High-Density Electromyography, (), 929–938. https://dl.acm.org/doi/abs/10.1145/2702123.2702501
 
-CSL-HDEMG -- https://www.uni-bremen.de/en/csl/research/motion-recognition
+Dataset information :-- CSL-HDEMG -- https://www.uni-bremen.de/en/csl/research/motion-recognition
 
 [2] C R. N. Khushaba and S. Kodagoda, “Electromyogram (emg) feature reduction using mutual components analysis for multifunction prosthetic
 fingers control,” in Control Automation Robotics & Vision (ICARCV),
